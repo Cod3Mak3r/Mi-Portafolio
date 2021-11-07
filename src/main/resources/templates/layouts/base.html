@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+	<head th:fragment="headerFiles(title)" >
+		<title th:text="${title}" ></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link th:href="@{/css/main.css}"  rel="stylesheet"  />
+		<noscript>
+			<link th:href="@{/css/noscript.css}" rel="stylesheet"  />
+		</noscript>	
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section th:fragment="menu(l1, l2, l3, l4)" id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro" th:text="${l1}" ></a></li>
+							<li><a href="#one" th:text="${l2}" ></a></li>
+							<li><a href="#two" th:text="${l3}" ></a></li>
+							<li><a href="#three" th:text="${l4}" ></a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div th:fragment="content" id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hola! Mi nombre es Kenneth Herrera</h1>
+							<p>
+								Vivo en Lima - Perú, soy estudiante de Ingenieria de Sistemas, <b>Backend
+								Developer</b> y un apasionado de las tecnologías. <br/>
+							</p>
+							<p>
+								Trabajo con el lenguaje de Java, usando su máximo 
+								potencial con su Framework principal. <b>Spring.</b>
+								<br/>
+								Además, utilizo las siguientes tecnologías...
+								
+							</p>
+							<ul class="actions">
+								<li>
+									<a href="#one" class="button scrolly">
+										Conoce más de mis habilidades									
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img th:src="@{/images/spring.jpg}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Spring Boot</h2>
+									<p>
+										Cuando descubrí que había un mundo mas allá, de las aplicaciones
+										de escritorio en java, me quede enamorado al saber todo el poder de java
+										aplicado en las tecnologias web.
+										Junto con Hibernate y Thymeleaf, hay un sin fin de posibilidades.
+									</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img th:src="@{/images/git.jpg}" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Git - Control de Versiones</h2>
+									<p>
+										Todo parte con un git init, e incia la creación de 
+										algo magico!.
+										Desde crear otra rama con git brach para hacer pruebas
+										o regresar al principio con git checkout si cambiaste tu idea.
+										Git es genial
+									</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img th:src="@{/images/bbdd.jpg}" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Base de Datos</h2>
+									<p>
+										Una parte muy importante de una aplicación, es la integridad de sus
+										datos. Un buen diseño le ayudará a que sea escalable y mantenible en
+										el tiempo.
+									</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>¿Cómo te puedo ayudar?</h2>
+							<p>
+								Estas son las soluciones que puedo ofrecer
+							</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Seguridad a tus aplicaciones</h3>
+									<p>
+										Puedo trabajar aplicaciones con seguridad robusta, usando Spring Security
+										protegiendo la información de tus aplicaciones.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Roles de usuario</h3>
+									<p>
+										Cualquiera no debe poder hacer cambios!!.. Con roles de usuario
+										te aseguras que solo el que posee privilegios de "ADMIN" puede
+										acceder a configuracion avanzada. 
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>API REST</h3>
+									<p>
+										Solo deseas una aplicacion del lado del servidor que se 
+										consuma por el frontend? Entonces los Api Rest son la solución. 
+										Trabajo api rest funcionales, que pueden ser posteriormente 
+										consumidos por frameworks como angular o react, etc.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>MicroServicios</h3>
+									<p>
+										Estás listo para dejar de tener una aplicación monolito, donde todo
+										esta mezclado y seguramente dificil de mantener, a 
+										empezar a separar los servicios de manera independiente. Los microservicios
+										llegaron para hacer tu app mantenible y escalable con el paso del tiempo.
+									</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Base de Datos</h3>
+									<p>
+										Puedo trabajar tanto MYSQL, PostgreSQL. Bases de datos
+										relacionales, y ademas con base de datos no relacionales como
+										MongoDb
+									</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Git Control de Versiones</h3>
+									<p>
+										Desarrollemos con orden y sin miedo con Git, ya que crearemos
+										ranas para ir de una realidad a otra, sin alterarse entre sí, viajar 
+										en el tiempo con git checkout, fusionar ramas con un git merg y más.
+										Todo parte con un git init y empieza la creación de algo único...
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Conoce mis proyectos</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>¿Listo para empezar?</h2>
+							<p>
+								Si lo que viste en mi portafolio crees que te pueda ayudar, entonces podemos
+								ponernos en contacto. <br/>  Es fácil, solo envíame un mensaje ;)
+							</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name" th:text="'Nombre'" ></label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email" th:text="'Email'" ></label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message" th:text="'Mensaje'" ></label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Contáctame</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Dirección</h3>
+											<span>SURQUILLO<br />
+											LIMA<br />
+											PERÚ</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">correo@example.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer th:fragment="footer" id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Kenneth Herrera. Todos los derechos reservados.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<div th:fragment="js" >
+			<script th:src="@{/js/jquery.min.js}"></script>
+			<script th:src="@{/js/jquery.scrollex.min.js}"></script>
+			<script th:src="@{/js/jquery.scrolly.min.js}"></script>
+			<script th:src="@{/js/browser.min.js}"></script>
+			<script th:src="@{/js/breakpoints.min.js}"></script>
+			<script th:src="@{/js/util.js}"></script>
+			<script th:src="@{/js/main.js}"></script>
+		</div>
+			
+
+	</body>
+</html>

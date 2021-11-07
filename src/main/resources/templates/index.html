@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+	
+	<head 
+	
+	th:replace="layouts/base.html :: headerFiles('Kenneth Herrera - Mi Portafolio') " >
+	
+	</head>
+	
+	<section
+	 
+	th:replace="layouts/base.html :: 
+	menu (	l1='¿Quien soy?', 
+			l2='Conoce mis habilidades', 
+			l3='¿Cómo te puedo ayudar?', 
+			l4='Contáctame') " >
+			
+	</section>
+	
+	<div th:replace="layouts/base.html :: content" ></div>
+	
+	<footer th:replace="layouts/base.html :: footer" ></footer>
+	
+	<div th:replace="layouts/base.html :: js" ></div>
+			
+
+	
+</html>
